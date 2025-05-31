@@ -1,0 +1,4 @@
+#!/bin/bash
+ip=$(ip a | grep "scope global dynamic mngtmpaddr noprefixroute" | grep "2001" | awk '{print $2}'|awk -F '/' '{print $1}')
+                curl --ipv6 --interface "$ip" INSERT THE URL U WANT TO PING HERE
+~                                          
